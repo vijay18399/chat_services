@@ -122,7 +122,545 @@ function getlang(langid){
             return ('Unknown');
     }
 }
+function getOptions(langid) {
 
+  switch (langid) {
+      case 'ar':
+          result = {
+              language: "Arabic",
+              languages: [{
+                  name: "English",
+                  model: "ar-en"
+              }]
+          };
+          break;
+      case 'bg':
+          result = {
+              language: "Bulgarian",
+              languages: [{
+                  name: "English",
+                  model: "bg-en"
+              }]
+          };
+          break;
+      case 'ca':
+          result = {
+              language: "Catalan",
+              languages: [{
+                  name: "Spanish",
+                  model: "ca-es"
+              }]
+          };
+          break;
+      case 'zh':
+          result = {
+              language: "Chinese",
+              languages: [{
+                  name: "English",
+                  model: "zh-en"
+              }]
+          };
+          break;
+      case 'zh-TW':
+          result = {
+              language: "Chinese",
+              languages: [{
+                  name: "English",
+                  model: "zh-TW-en"
+              }]
+          };
+          break;
+      case 'hr':
+          result = {
+              language: "Croatian",
+              languages: [{
+                  name: "English",
+                  model: "hr-en"
+              }]
+          };
+          break;
+      case 'cs':
+          result = {
+              language: "Czech",
+              languages: [{
+                  name: "English",
+                  model: "cs-en"
+              }]
+          };
+          break;
+      case 'da':
+          result = {
+              language: "Danish",
+              languages: [{
+                  name: "English",
+                  model: "da-en"
+              }]
+          };
+          break;
+      case 'nl':
+          result = {
+              language: "Dutch",
+              languages: [{
+                  name: "English",
+                  model: "nl-en"
+              }]
+          };
+          break;
+      case 'en':
+          result = {
+              language: "English",
+              languages: [{
+                      name: "Arabic",
+                      model: "en-ar"
+                  },
+                  {
+                      name: "Bulgarian",
+                      model: "en-bg"
+                  },
+                  {
+                      name: "Czech",
+                      model: "en-cs"
+                  },
+                  {
+                      name: "Danish",
+                      model: "en-da"
+                  },
+                  {
+                      name: "German",
+                      model: "en-de"
+                  },
+                  {
+                      name: "Greek",
+                      model: "en-el"
+                  },
+                  {
+                      name: "Spanish",
+                      model: "en-es"
+                  },
+                  {
+                      name: "Estonian",
+                      model: "en-et"
+                  },
+                  {
+                      name: "Finnish",
+                      model: "en-fi"
+                  },
+                  {
+                      name: "French",
+                      model: "en-fr"
+                  },
+                  {
+                      name: "Irish",
+                      model: "en-ga"
+                  },
+                  {
+                      name: "Hebrew",
+                      model: "en-he"
+                  },
+                  {
+                      name: "Hindi",
+                      model: "en-hi"
+                  },
+                  {
+                      name: "Croatian",
+                      model: "en-hr"
+                  },
+                  {
+                      name: "Indonesian",
+                      model: "en-id"
+                  },
+                  {
+                      name: "Italian",
+                      model: "en-it"
+                  },
+                  {
+                      name: "Japanese",
+                      model: "en-ja"
+                  },
+                  {
+                      name: "Korean",
+                      model: "en-ko"
+                  },
+                  {
+                      name: "Latvian",
+                      model: "en-lv"
+                  },
+                  {
+                      name: "Lithuanian",
+                      model: "en-lt"
+                  },
+                  {
+                      name: "Malay",
+                      model: "en-ms"
+                  },
+                  {
+                      name: "Norwegian Bokmal",
+                      model: "en-nb"
+                  },
+                  {
+                      name: "Dutch",
+                      model: "en-nl"
+                  },
+                  {
+                      name: "Polish",
+                      model: "en-pl"
+                  },
+                  {
+                      name: "Portuguese",
+                      model: "en-pt"
+                  },
+                  {
+                      name: "Romanian",
+                      model: "en-ro"
+                  },
+                  {
+                      name: "Russian",
+                      model: "en-ru"
+                  },
+                  {
+                      name: "Slovak",
+                      model: "en-sk"
+                  },
+                  {
+                      name: "Slovenian",
+                      model: "en-sl"
+                  },
+                  {
+                      name: "Swedish",
+                      model: "en-sv"
+                  },
+                  {
+                      name: "Thai",
+                      model: "en-th"
+                  },
+                  {
+                      name: "Turkish",
+                      model: "en-tr"
+                  },
+                  {
+                      name: "Simplified Chinese",
+                      model: "en-zh"
+                  },
+                  {
+                      name: "Traditional Chinese",
+                      model: "en-zh-TW"
+                  },
+                  {
+                      name: "Urdu ",
+                      model: "en-ur"
+                  },
+                  {
+                      name: "Vietnamese",
+                      model: "en-vi"
+                  }
+              ]
+          };
+          break;
+      case 'et':
+          result = {
+              language: "Estonian",
+              languages: [{
+                  name: "English",
+                  model: "et-en"
+              }]
+          };
+          break;
+      case 'fi':
+          result = {
+              language: "Finnish",
+              languages: [{
+                  name: "English",
+                  model: "fi-en"
+              }]
+          };
+          break;
+      case 'fr':
+          result = {
+              language: "French",
+              languages: [{
+                      name: "German",
+                      model: "fr-de"
+                  },
+                  {
+                      name: "English",
+                      model: "fr-en"
+                  },
+                  {
+                      name: "Spanish",
+                      model: "fr-es"
+                  }
+              ]
+          };
+          break;
+      case 'de':
+          result = {
+              language: "German",
+              languages: [{
+                      name: "English",
+                      model: "de-en"
+                  },
+                  {
+                      name: "French",
+                      model: "de-fr"
+                  },
+                  {
+                      name: "Italian",
+                      model: "de-it"
+                  }
+              ]
+          };
+          break;
+      case 'el':
+          result = {
+              language: "Greek",
+              languages: [{
+                  name: "English",
+                  model: "el-en"
+              }]
+          };
+          break;
+      case 'he':
+          result = {
+              language: "Hebrew",
+              languages: [{
+                  name: "English",
+                  model: "he-en"
+              }]
+          };
+          break;
+      case 'hi':
+          result = {
+              language: "Hindi",
+              languages: [{
+                  name: "English",
+                  model: "hi-en"
+              }]
+          };
+          break;
+      case 'hu':
+          result = {
+              language: "Hungarian",
+              languages: [{
+                  name: "English",
+                  model: "hu-en"
+              }]
+          };
+          break;
+      case 'id':
+          result = {
+              language: "Indonesian",
+              languages: [{
+                  name: "English",
+                  model: "id-en"
+              }]
+          };
+          break;
+      case 'ga':
+          result = {
+              language: "Irish",
+              languages: [{
+                  name: "English",
+                  model: "ga-en"
+              }]
+          };
+          break;
+      case 'it':
+          result = {
+              language: "Italian",
+              languages: [{
+                      name: "German",
+                      model: "it-de"
+                  },
+                  {
+                      name: "English",
+                      model: "it-en"
+                  }
+              ]
+          };
+          break;
+      case 'ja':
+          result = {
+              language: "Japanese",
+              languages: [{
+                  name: "English",
+                  model: "ja-en"
+              }]
+          };
+          break;
+      case 'ko':
+          result = {
+              language: "Korean",
+              languages: [{
+                  name: "English",
+                  model: "ko-en"
+              }]
+          };
+          break;
+      case 'lv':
+          result = {
+              language: "Latvian",
+              languages: [{
+                  name: "English",
+                  model: "lv-en"
+              }]
+          };
+          break;
+      case 'lt':
+          result = {
+              language: "Lithuanian",
+              languages: [{
+                  name: "English",
+                  model: "lt-en"
+              }]
+          };
+          break;
+      case 'ms':
+          result = {
+              language: "Malay",
+              languages: [{
+                  name: "English",
+                  model: "ms-en"
+              }]
+          };
+          break;
+      case '':
+          result = {
+              language: "",
+              languages: [{
+                  name: "English",
+                  model: ""
+              }]
+          };
+          break;
+      case 'nb':
+          result = {
+              language: "Norwegian Bokmal",
+              languages: [{
+                  name: "English",
+                  model: "nb-en"
+              }]
+          };
+          break;
+      case 'pl':
+          result = {
+              language: "Polish",
+              languages: [{
+                  name: "English",
+                  model: "pl-en"
+              }]
+          };
+          break;
+      case 'pt':
+          result = {
+              language: "Portuguese",
+              languages: [{
+                  name: "English",
+                  model: "pt-en"
+              }]
+          };
+          break;
+      case 'ro':
+          result = {
+              language: "Romanian",
+              languages: [{
+                  name: "English",
+                  model: "ro-en"
+              }]
+          };
+          break;
+      case 'ru':
+          result = {
+              language: "Russian",
+              languages: [{
+                  name: "English",
+                  model: "ru-en"
+              }]
+          };
+          break;
+      case 'sk':
+          result = {
+              language: "Slovak",
+              languages: [{
+                  name: "English",
+                  model: "sk-en"
+              }]
+          };
+          break;
+      case 'sl':
+          result = {
+              language: "Slovenian",
+              languages: [{
+                  name: "English",
+                  model: "sl-en"
+              }]
+          };
+          break;
+      case 'es':
+          result = {
+              language: "Spanish",
+              languages: [{
+                      name: "Catalan",
+                      model: "es-ca"
+                  },
+                  {
+                      name: "English",
+                      model: "es-en"
+                  },
+                  {
+                      name: "French",
+                      model: "es-fr"
+                  }
+              ]
+          };
+          break;
+      case 'sv':
+          result = {
+              language: "Swedish",
+              languages: [{
+                  name: "English",
+                  model: "sv-en"
+              }]
+          };
+          break;
+      case 'th':
+          result = {
+              language: "Thai",
+              languages: [{
+                  name: "English",
+                  model: "th-en"
+              }]
+          };
+          break;
+      case 'tr':
+          result = {
+              language: "Turkish",
+              languages: [{
+                  name: "English",
+                  model: "tr-en"
+              }]
+          };
+          break;
+      case 'ur':
+          result = {
+              language: "Urdu",
+              languages: [{
+                  name: "English",
+                  model: "ur-en"
+              }]
+          };
+          break;
+      case 'vi':
+          result = {
+              language: "Vietnamese",
+              languages: [{
+                  name: "English",
+                  model: "vi-en"
+              }]
+          };
+          break;
+  }
+  return result;
+}
 
 exports.Url = (req, res) => {
   result=[]
@@ -202,7 +740,6 @@ exports.Translate = (req, res) => {
         .catch(err => {
           console.log('error:', err);
           res.status(201).json({error:true,msg:'Current Language not Supported'});
-          return({error:true,msg:'Current Language not Supported'});
         });
 
       }
@@ -220,3 +757,49 @@ exports.Translate = (req, res) => {
   
 
 };
+
+exports.GetLangOtions = (req, res) => {
+  message = req.body.message;
+  const identifyParams = {
+    text: req.body.message
+  };
+  
+  languageTranslator.identify(identifyParams)
+    .then(identifiedLanguages => {
+      console.log(identifiedLanguages.result.languages[0].language);
+      options = getOptions(identifiedLanguages.result.languages[0].language);
+      langid=identifiedLanguages.result.languages[0].language;
+      result= {message,options,langid,error:false }
+      console.log(result);
+      return res.status(201).json(result);
+    })
+    .catch(err => {
+      console.log('error:', err);
+      return res.status(201).json({error:true});
+    });
+};
+
+
+exports.Translater = (req, res) => {
+  message = req.body.message;
+  const identifyParams = {
+    text: req.body.message
+  };
+    const translateParams = {
+      text: req.body.message,
+      modelId: req.params.modelId,
+    };
+    languageTranslator.translate(translateParams)
+    .then(translationResult => {
+     result = translationResult.result.translations[0].translation;
+     console.log({error:false,result,message});
+     res.status(201).json({error:false,result,message});
+    })
+    .catch(err => {
+      console.log('error:', err);
+      res.status(201).json({error:true,msg:'Current Language not Supported Now'});
+    });
+  
+
+};
+
